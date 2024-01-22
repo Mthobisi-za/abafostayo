@@ -89,8 +89,8 @@ img {
 
 @media (max-width:400px) {
     .socials img {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -219,3 +219,28 @@ img {
 
 
 /* mobile */
+
+@media (max-width:862px) {
+    .meet .big_title {
+        font-size: 50px;
+        line-height: 100%;
+        letter-spacing: normal;
+        text-align: center;
+    }
+    .meet {
+        background-image: url('./new_assets_2024/meet_bg.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        min-height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bg_black {
+        background-color: #1E1E1E;
+    }
+    .title_sm {
+        font-size: 30px;
+        text-align: center;
+    }
+}
