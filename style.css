@@ -54,14 +54,17 @@ img {
         width: 30px;
         height: 30px;
     }
-    .mobile {
+    /* .mobile {
         display: block;
-    }
+    } */
 }
 
-@media (max-width:635px) {
+@media (max-width:862px) {
     .desktop {
         display: none;
+    }
+    .mobile {
+        display: block;
     }
     .svg_container_m {
         background-image: url('./new_assets_2024/bg_mobile.png');
@@ -90,3 +93,129 @@ img {
         height: 30px;
     }
 }
+
+
+/* new styles */
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: -2px;
+}
+
+.meet {
+    background-image: url('./new_assets_2024/meet_bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meet .column {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.big_title {
+    font-family: "TradeGothic LT Bold";
+    font-size: 100px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -5.36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.c_yellow {
+    color: #F2BE06;
+}
+
+.watch {
+    background-image: url('./new_assets_2024/wtach_bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+}
+
+.watch .column,
+.moonga .column,
+.mr_cold .column,
+.baseline .column,
+.dlala .column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.baseline .column {
+    padding-left: 10px;
+}
+
+.play {
+    width: 130px;
+}
+
+.title_sm {
+    color: #FFF;
+    font-family: "TradeGothic LT Bold";
+    font-size: 65px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 2.37px;
+    text-transform: uppercase;
+}
+
+.moonga {
+    background-image: url('./new_assets_2024/bgs/monga_bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+}
+
+.mr_cold {
+    background-image: url('./new_assets_2024/bgs/mr_cold.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+}
+
+.baseline {
+    background-image: url('./new_assets_2024/bgs/bassline_bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+}
+
+.dlala {
+    background-image: url('./new_assets_2024/bgs/dlala_g_bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+}
+
+
+/* mobile */
