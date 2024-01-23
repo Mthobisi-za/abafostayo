@@ -2,6 +2,11 @@
     --imgMaxWidth: 100%;
 }
 
+@font-face {
+    font-family: "TradeGothic LT Bold";
+    src: url('./Trade\ Gothic\ LT\ Bold\ No.\ 2.ttf');
+}
+
 * {
     line-height: 0px;
 }
@@ -24,8 +29,11 @@ img {
 
 .svg_container {
     background-image: url('./new_assets_2024/bg.png');
-    display: flex;
-    align-items: center;
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: 50% 50%;
+    justify-content: stretch;
+    background-size: cover;
 }
 
 .left {
@@ -35,6 +43,8 @@ img {
 .socials {
     display: flex;
     gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .socials img {
@@ -44,6 +54,14 @@ img {
 
 .mobile {
     display: none;
+}
+
+.right {
+    display: flex;
+    align-items: baseline;
+    /* background-color: #F2BE06; */
+    justify-content: flex-end;
+    flex-direction: column;
 }
 
 
@@ -70,6 +88,7 @@ img {
         background-image: url('./new_assets_2024/bg_mobile.png');
         padding-top: 20px;
         background-repeat: no-repeat;
+        background-size: cover;
     }
     .svg_container_m .text {
         /* padding-right: 20px; */
@@ -105,21 +124,23 @@ img {
 
 .meet {
     background-image: url('./new_assets_2024/meet_bg.png');
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-position: center;
 }
 
 .meet .column {
     padding-left: 20px;
     padding-right: 20px;
+    text-align: center;
 }
 
 .big_title {
-    font-family: "TradeGothic LT Bold";
+    font-family: "TradeGothic LT Bold", 'sans-serif';
     font-size: 100px;
     font-style: italic;
     font-weight: 700;
@@ -127,6 +148,7 @@ img {
     letter-spacing: -5.36px;
     text-transform: uppercase;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .c_yellow {
@@ -135,13 +157,14 @@ img {
 
 .watch {
     background-image: url('./new_assets_2024/wtach_bg.png');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     min-height: 50vh;
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: 50% 50%;
+    background-position: top;
 }
 
 .watch .column,
@@ -164,7 +187,7 @@ img {
 
 .title_sm {
     color: #FFF;
-    font-family: "TradeGothic LT Bold";
+    font-family: "TradeGothic LT Bold", 'sans-serif';
     font-size: 65px;
     font-style: italic;
     font-weight: 700;
@@ -175,46 +198,50 @@ img {
 
 .moonga {
     background-image: url('./new_assets_2024/bgs/monga_bg.png');
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     min-height: 60vh;
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: 50% 50%;
+    background-position: right center;
 }
 
 .mr_cold {
     background-image: url('./new_assets_2024/bgs/mr_cold.png');
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     min-height: 60vh;
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: 50% 50%;
+    background-position: left center;
 }
 
 .baseline {
     background-image: url('./new_assets_2024/bgs/bassline_bg.png');
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     min-height: 60vh;
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: 50% 50%;
+    background-position: right center;
 }
 
 .dlala {
     background-image: url('./new_assets_2024/bgs/dlala_g_bg.png');
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     min-height: 60vh;
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: 50% 50%;
+    background-position: left center;
 }
 
 
@@ -229,7 +256,7 @@ img {
     }
     .meet {
         background-image: url('./new_assets_2024/meet_bg.png');
-        background-size: 100% 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         min-height: 10vh;
         display: flex;
@@ -237,10 +264,60 @@ img {
         justify-content: center;
     }
     .bg_black {
-        background-color: #1E1E1E;
+        background: #0F0E0E;
     }
     .title_sm {
         font-size: 30px;
         text-align: center;
+    }
+    .right img {
+        width: 100%!important;
+    }
+}
+
+.small_txt {
+    color: #FFF;
+    font-family: "TradeGothic LT Bold", 'sans-serif';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.48px;
+}
+
+.c_yellow_n {
+    color: #F2BE06;
+}
+
+
+/* resposnive titles and fonts */
+
+@media (max-width:1433px) {
+    .title_sm {
+        font-size: 35px;
+    }
+    .small_txt {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:1299px) {
+    .title_sm {
+        font-size: 35px;
+    }
+    .small_txt {
+        font-size: 20px;
+    }
+    .svg_container {
+        grid-template-columns: 100%;
+    }
+    .right {
+        align-items: end;
+    }
+    .left {
+        width: 90%;
+    }
+    .right img {
+        width: 70%;
     }
 }
