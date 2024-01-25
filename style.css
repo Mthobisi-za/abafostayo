@@ -7,9 +7,10 @@
     src: url('./Trade\ Gothic\ LT\ Bold\ No.\ 2.ttf');
 }
 
-* {
+
+/* * {
     line-height: 0px;
-}
+} */
 
 body {
     width: 100%;
@@ -18,7 +19,7 @@ body {
 }
 
 .page_width {
-    width: 100%;
+    width: 100%!important;
 }
 
 img {
@@ -34,6 +35,8 @@ img {
     grid-template-columns: 50% 50%;
     justify-content: stretch;
     background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 .left {
@@ -116,10 +119,12 @@ img {
 
 /* new styles */
 
-.container {
+.container_updated {
     display: grid;
     grid-template-columns: 50% 50%;
     margin-top: -2px;
+    max-width: 100%;
+    width: 100%;
 }
 
 .meet {
@@ -131,6 +136,7 @@ img {
     align-items: center;
     justify-content: center;
     background-position: center;
+    width: 100%;
 }
 
 .meet .column {
@@ -141,11 +147,11 @@ img {
 
 .big_title {
     font-family: "TradeGothic LT Bold", 'sans-serif';
-    font-size: 100px;
+    font-size: 134px;
     font-style: italic;
     font-weight: 700;
     line-height: 100%;
-    letter-spacing: -5.36px;
+    /* letter-spacing: -5.36px; */
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: center;
@@ -188,11 +194,11 @@ img {
 .title_sm {
     color: #FFF;
     font-family: "TradeGothic LT Bold", 'sans-serif';
-    font-size: 65px;
+    font-size: 68px;
     font-style: italic;
     font-weight: 700;
-    line-height: 100%;
-    letter-spacing: 2.37px;
+    /* line-height: 67px; */
+    /* 98.529% */
     text-transform: uppercase;
 }
 
