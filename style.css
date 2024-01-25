@@ -147,11 +147,11 @@ img {
 
 .big_title {
     font-family: "TradeGothic LT Bold", 'sans-serif';
-    font-size: 134px;
+    font-size: 124px;
     font-style: italic;
     font-weight: 700;
     line-height: 100%;
-    /* letter-spacing: -5.36px; */
+    letter-spacing: -0.05em;
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: center;
