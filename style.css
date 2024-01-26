@@ -327,3 +327,32 @@ img {
         width: 70%;
     }
 }
+
+
+/* new code css */
+
+.title_sm {
+    Line-height: 67px;
+}
+
+@media (max-width: 1299px) {
+    .title_sm {
+        font-size: 35px;
+        line-height: 34px;
+    }
+    .big_title {
+        Line-height: 123px;
+    }
+}
+
+.larger_text {
+    Font-size: 88px;
+    Line-height: 87px;
+}
+
+@media (max-width: 1299px) {
+    .larger_text {
+        Font-size: 55px;
+        Line-height: 54px;
+    }
+}
