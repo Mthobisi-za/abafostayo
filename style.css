@@ -331,6 +331,10 @@ img {
 
 /* new code css */
 
+.title_sm:first-child {
+    text-align: left;
+}
+
 .title_sm {
     Line-height: 67px;
 }
